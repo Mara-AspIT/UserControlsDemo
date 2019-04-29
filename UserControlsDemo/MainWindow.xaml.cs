@@ -40,5 +40,5 @@ namespace UserControlsDemo
         {
             ucContainer.Content = secondUserControl;
         }
-    }
+    } 
 }
