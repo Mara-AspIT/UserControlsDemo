@@ -20,9 +20,25 @@ namespace UserControlsDemo
     /// </summary>
     public partial class MainWindow: Window
     {
+        private FirstUserControl firstUserControl;
+        private SecondUserControl secondUserControl;
+
         public MainWindow()
         {
             InitializeComponent();
+            firstUserControl = new FirstUserControl();
+            secondUserControl = new SecondUserControl();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // 1
+            ucContainer.Content = firstUserControl;
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            ucContainer.Content = secondUserControl;
         }
     }
 }

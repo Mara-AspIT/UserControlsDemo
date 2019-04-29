@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UserControlsDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+  <Grid>
+    <Button x:Name="button"
+            Content="1"
+            HorizontalAlignment="Left"
+            Margin="47,30,0,0"
+            VerticalAlignment="Top"
+            Width="75"
+            Click="Button_Click" />
+    <Button x:Name="button1"
+            Content="2"
+            HorizontalAlignment="Left"
+            Margin="47,74,0,0"
+            VerticalAlignment="Top"
+            Width="75"
+            Click="Button1_Click" />
+    <UserControl x:Name="ucContainer"
+                 Height="200"
+                 Width="200" />
+
+  </Grid>
 </Window>
